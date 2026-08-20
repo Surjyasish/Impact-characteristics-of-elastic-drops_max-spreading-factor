@@ -85,6 +85,4 @@ Note: cell 5 contains a `google.colab` mount for saving CSVs to Drive — commen
 }
 ```
 
-## License
 
-Code: MIT. Please cite the paper if you use these solvers or figures in derived work.
