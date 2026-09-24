@@ -74,15 +74,9 @@ Note: cell 5 contains a `google.colab` mount for saving CSVs to Drive — commen
 - **`El < 1`**: contact-line pinning and contact-foot ejection dissipate 90–99% of the kinetic energy; the polynomial reproduces the observed spread only with large `λ` and moderate `Ec`.
 - The transition at `El ≈ 1` is where the impact force scaling also crosses over from the Wagner limit (`F* ≈ 3.24`) to the Hertzian power law (`F* ∼ El⁰·³⁸`).
 
-## Citation
+## Note
+Anybody using this repository please cite Chowdhury, A., Mitra, S., & Mitra, S. K. *Bridging Liquid and Elastic Solid Impact Regimes Using Flexible Hydrogels.* Langmuir, 42 (33), 24237 - 242246 (2026).
 
-```bibtex
-@article{Chowdhury2026Bridging,
-  author  = {Chowdhury, Akash and Mitra, Surjyasish and Mitra, Sushanta K.},
-  title   = {Bridging Liquid and Elastic Solid Impact Regimes Using Flexible Hydrogels},
-  journal = {Langmuir},
-  year    = {2026},
-  doi     = {10.1021/acs.langmuir.6c02919}
 }
 ```
 
