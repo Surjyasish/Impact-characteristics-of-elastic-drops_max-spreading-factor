@@ -2,7 +2,7 @@
 
 Numerical solver and parameter-space maps for the maximum spreading factor **β** of soft elastic (PAAm hydrogel) drops on rigid substrates, accompanying:
 
-> Chowdhury, A., Mitra, S., & Mitra, S. K. *Bridging Liquid and Elastic Solid Impact Regimes Using Flexible Hydrogels.* Langmuir (2026). [doi:10.1021/acs.langmuir.6c02919](https://doi.org/10.1021/acs.langmuir.6c02919)
+> Chowdhury, A., Mitra, S., & Mitra, S. K. *Bridging Liquid and Elastic Solid Impact Regimes Using Flexible Hydrogels.* Langmuir, 42 (33), 24237 - 242246 (2026). [doi:10.1021/acs.langmuir.6c02919](https://doi.org/10.1021/acs.langmuir.6c02919)
 
 ## What this repo does
 
@@ -20,7 +20,7 @@ with
 - `We = ρv₀²r₀/γ` — Weber number
 - `λ = L/T`         — fraction of kinetic energy dissipated (empirical)
 
-This notebook solves that polynomial numerically over a grid in (We, El), extracts positive real roots, and visualises the resulting β-landscape — including the two physically admissible roots (`β_min`, `β_max`) that appear in the intermediate-elasticity regime.
+This notebook solves that polynomial numerically over a grid in (We, El), extracts positive real roots, and visualises the resulting β-landscape, including the two physically admissible roots (`β_min`, `β_max`) that appear in the intermediate-elasticity regime.
 
 ## Contents
 
@@ -42,11 +42,12 @@ For each `(We, El)` grid point:
 
 Grid: `We ∈ [1, 500]`, `El ∈ [10⁻³, 10²]`, 500 × 500 log-spaced points. Default `λ = 0.5`.
 
-## Reproducing the paper figures
+## Repo output figures
 
-The three impact velocities in the experiments (1, 2, 3 m/s) correspond to `We ≈ 30, 120, 270`. The notebook plots `β_max(El)` and `β_min(El)` slices at these values — these are the theoretical curves overlaid on the experimental data in Fig. 5(b,c) of the paper.
+The three impact velocities in the experiments (1, 2, 3 m/s) correspond to `We ≈ 30, 120, 270`. 
+The notebook plots `β_max(El)` and `β_min(El)` slices at these values for three different `λ` values.
+Further, the notebook plots the `β_max(El)` and `β_min(El)` contour plots as a function of `We` and `El`
 
-For the stiff-gel limit (`El ≫ 1`, `Ec ≫ 100`), the physical solution reduces to the cubic (Eq. 5), which the sixth-order roots recover as expected. For soft gels (`El < 1`), setting `λ ≈ 0.9–0.99` reproduces the purple/red dashed curves in Fig. 5.
 
 ## Usage
 
